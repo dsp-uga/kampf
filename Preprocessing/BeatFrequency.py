@@ -19,5 +19,5 @@ merge=np.zeros( (max_freq_indices.shape[0],max_freq_indices.shape[1]), dtype=np.
 for i in range(max_freq_indices.shape[0]):
 	for j in range(max_freq_indices.shape[1]):
 		merge[i][j]=mat[max_freq_indices[i][j]][i][j]
-#same png
+#save png
 matplotlib.image.imsave(sys.argv[1]+'.png', merge)
